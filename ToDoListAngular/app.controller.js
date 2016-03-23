@@ -17,8 +17,7 @@ angular
           .then(function(photo) {
             console.log(photo);
             $scope.photo = MarsPicService.randoMarPhoto(photo.data.photos);
-                  // $scope.date = ;
-            // window.glob = $scope.photo;
+                
             $scope.date = $scope.photo.earth_date;
             $scope.name = $scope.photo.camera.full_name
             $scope.img = $scope.photo.img_src
